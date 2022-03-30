@@ -5,7 +5,7 @@ specifiers:
   typescript: ^4.5.4
   vite: ^2.9.0
   vite-plugin-inspect: ^0.4.3
-  vite-plugin-vue-3-script-setup-options: ^0.0.4
+  vite-plugin-vue-3-script-setup-options: ^0.0.5
   vue: ^3.2.25
   vue-tsc: ^0.29.8
 
@@ -17,7 +17,7 @@ devDependencies:
   typescript: 4.6.3
   vite: 2.9.0
   vite-plugin-inspect: 0.4.3_vite@2.9.0
-  vite-plugin-vue-3-script-setup-options: 0.0.4
+  vite-plugin-vue-3-script-setup-options: 0.0.5
   vue-tsc: 0.29.8_typescript@4.6.3
 
 packages:
@@ -915,8 +915,8 @@ packages:
       - supports-color
     dev: true
 
-  /vite-plugin-vue-3-script-setup-options/0.0.4:
-    resolution: {integrity: sha512-QKmI2eTMxKtBNaMah0SrFUdUP3CvmOQl5HUhc50+v8SEm0s0y3DR0FSaloyAk4hz1Itb4+p0c/+s6oST/BH9WA==}
+  /vite-plugin-vue-3-script-setup-options/0.0.5:
+    resolution: {integrity: sha512-kCauouBYvAaG+HTteubRCZDFAkGAFehSAp/dJKqvRuRtStzgFS2Q4SDMns4/zQ27bioaCDqD0QK+SbmORIDu7A==}
     dependencies:
       node-html-parser: 5.3.3
     dev: true
