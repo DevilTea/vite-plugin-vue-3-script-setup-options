@@ -31,6 +31,8 @@ export default {
 
 ## Usage
 
+[Example](./example/)
+
 1. You will need to install the plugins
 ```bash
 npm install -D @vitejs/plugin-vue vite-plugin-vue-3-script-setup-options
