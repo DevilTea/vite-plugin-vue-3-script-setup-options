@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-vue-3-script-setup-options",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A simple wrapper for @vitejs/plugin-vue transforming simple options of script setup",
   "keywords": [],
   "license": "MIT",
@@ -9,7 +9,17 @@
     "url": "git+https://github.com/DevilTea/vite-plugin-vue-3-script-setup-options.git"
   },
   "author": "",
-  "main": "index.js",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.mjs"
+    }
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "directories": {
     "test": "test"
   },
@@ -24,6 +34,9 @@
     "url": "https://github.com/DevilTea/vite-plugin-vue-3-script-setup-options/issues"
   },
   "homepage": "https://github.com/DevilTea/vite-plugin-vue-3-script-setup-options#readme",
+  "dependencies": {
+    "node-html-parser": "^5.3.3"
+  },
   "devDependencies": {
     "@deviltea/eslint-config-ts": "^2.0.0",
     "@vitejs/plugin-vue": "^2.3.0",
@@ -31,8 +44,5 @@
     "tsup": "^5.12.1",
     "typescript": "^4.6.3",
     "vite": "^2.9.0"
-  },
-  "dependencies": {
-    "node-html-parser": "^5.3.3"
   }
 }
