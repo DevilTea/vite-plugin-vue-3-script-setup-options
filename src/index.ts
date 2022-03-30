@@ -22,7 +22,7 @@ export default function Plugin (vuePlugin: ReturnType<typeof VuePlugin>): Plugin
         const root = parse(args[0])
         const script = root.querySelector('script[setup]')
         if (script != null) {
-          const { name, inheritAttrs } = script.attrs
+          const { name, inheritAttrs } = script.attributes
 
           if (
             typeof transformed !== 'string'
