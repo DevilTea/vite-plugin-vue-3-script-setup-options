@@ -1,5 +1,11 @@
 {
-  "extends": "@antfu/eslint-config",
+  "extends": "@deviltea/eslint-config-ts",
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "extraFileExtensions": [
+      ".md"
+    ]
+  },
   "rules": {
     "no-useless-return": "off",
     "@typescript-eslint/no-unused-vars": "off"

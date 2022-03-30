@@ -1,35 +1,57 @@
-## vite-plugin-starter
+## vite-plugin-vue-3-script-setup-options
 
-A template project that can allows you to quickly start writing vite plugin.
+A vite plugin that wrap `@vitejs/plugin-vue` to extend the transforming process.
 
-Integrated capabilities as show below:
+Currently transform the attributes, `name` and `inheritAttrs`, in `<script setup>` tag .
 
-- TypeScript
-- Jest
-- Eslint
-- Git Action, it's use the workflow to automatically publish npm
+### Before
+```vue
+<script setup>
+...
+</script>
+
+<script>
+export default {
+  name: 'MyComponent',
+  inheritAttrs: false
+}
+</script>
+```
+
+### After
+```vue
+<script
+  setup
+  name="MyComponent"
+  inheritAttrs="false"
+>
+...
+</script>
+```
 
 ## Usage
 
-**1.Use this template**
-
-
-**2.Write author name in LICENSE**
-
-And then, you should wirte your name to replace the `[Author Name]` in LICENSE file:
-
-```
-MIT License
-
-Copyright (c) 2021 [Author Name]
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-...
+1. You will need to install the plugins
+```bash
+npm install -D @vitejs/plugin-vue vite-plugin-vue-3-script-setup-options
 ```
 
-**3.Create the secrets of NPM_AUTH_TOKEN**
+2. Go to your vite config, replace and wrap the original `@vitejs/plugin-vue`
+```js
+import VuePlugin from '@vitejs/plugin-vue'
+import ScriptSetupOptionsPlugin from 'vite-plugin-vue-3-script-setup-options'
 
-Because of git action must used the NPM Token to automatically publish npm, so you should generate your the NPM Token, and then add to your repo's settings->secrets.
+{
+  ...
+  plugins: [
+    ScriptSetupOptionsPlugin(VuePlugin({
+      // @vitejs/plugin-vue Options
+    }))
+  ]
+  ...
+}
+```
 
->Note, the secrets must name to NPM_AUTH_TOKEN.
-
+## Limitations
+1. eslint are not support
+2. It's a rough implementation to demo the RFC proposal.

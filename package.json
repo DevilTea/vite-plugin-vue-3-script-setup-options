@@ -1,7 +1,14 @@
 {
-  "name": "vite-plugin-template",
+  "name": "vite-plugin-vue-3-script-setup-options",
   "version": "0.0.1",
-  "description": "A template project that can allows you to quickly start writing vite plugin.",
+  "description": "A simple wrapper for @vitejs/plugin-vue transforming simple options of script setup",
+  "keywords": [],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevilTea/vite-plugin-vue-3-script-setup-options.git"
+  },
+  "author": "",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -13,26 +20,19 @@
     "test": "jest",
     "test:update": "jest -u"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/WJCHumble/vite-plugin-template.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/WJCHumble/vite-plugin-template/issues"
+    "url": "https://github.com/DevilTea/vite-plugin-vue-3-script-setup-options/issues"
   },
-  "homepage": "https://github.com/WJCHumble/vite-plugin-template#readme",
+  "homepage": "https://github.com/DevilTea/vite-plugin-vue-3-script-setup-options#readme",
   "devDependencies": {
-    "@antfu/eslint-config": "^0.4.3",
-    "@types/jest": "^26.0.24",
-    "@typescript-eslint/eslint-plugin": "^4.15.2",
-    "eslint": "^7.20.0",
-    "jest": "^27.0.6",
-    "ts-jest": "^27.0.4",
-    "tsup": "^4.2.0",
-    "typescript": "^4.1.5",
-    "vite": "^2.3.2"
+    "@deviltea/eslint-config-ts": "^2.0.0",
+    "@vitejs/plugin-vue": "^2.3.0",
+    "eslint": "^8.12.0",
+    "tsup": "^5.12.1",
+    "typescript": "^4.6.3",
+    "vite": "^2.9.0"
+  },
+  "dependencies": {
+    "node-html-parser": "^5.3.3"
   }
 }
