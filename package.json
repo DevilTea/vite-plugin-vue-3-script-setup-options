@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-vue-3-script-setup-options",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A simple wrapper for @vitejs/plugin-vue transforming simple options of script setup",
   "keywords": [],
   "license": "MIT",

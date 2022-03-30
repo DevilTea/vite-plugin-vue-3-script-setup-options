@@ -15,7 +15,7 @@ export default function Plugin (vuePlugin: ReturnType<typeof VuePlugin>): Plugin
 
   return ({
     ...vuePlugin,
-    name: 'vite-plugin-vue-extra',
+    name: 'vite-plugin-vue-3-script-setup-options',
     async transform (...args) {
       const transformed: Awaited<ReturnType<typeof $transform>> = await $transform.call(this, ...args)
       if (transformed != null) {
