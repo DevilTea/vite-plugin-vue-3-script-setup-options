@@ -1,5 +1,8 @@
 ## vite-plugin-vue-3-script-setup-options
 
+![](https://img.shields.io/npm/v/vite-plugin-vue-3-script-setup-options?style=for-the-badge)
+![](https://img.shields.io/npm/dw/vite-plugin-vue-3-script-setup-options?style=for-the-badge)
+
 A vite plugin that wrap `@vitejs/plugin-vue` to extend the transforming process.
 
 Currently transform the attributes, `name` and `inheritAttrs`, in `<script setup>` tag .
